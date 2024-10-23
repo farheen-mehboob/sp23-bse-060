@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farheen's Professional Portfolio</title>
+  
+    <link rel="stylesheet" href="midterm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        Semester Projects Portfolio
+    </div>
+
+    <div class="portfolio-container">
+        <!-- Semester 1 Column -->
+        <div class="portfolio-column" id="project1">
+            <img src="https://my.chartered.college/wp-content/uploads/2021/10/martin-adams-1062002-unsplash.jpg" alt="Semester 1 Project">
+            <div class="label">Semester 1</div>
+            <button class="view-btn" onclick="showDescription(1)">View Description</button>
+        </div>
+
+        <!-- Semester 2 Column -->
+        <div class="portfolio-column" id="project2">
+            <img src="https://cdn1.vectorstock.com/i/1000x1000/41/20/online-shop-website-landing-page-design-vector-24954120.jpg" alt="Semester 2 Project">
+            <div class="label">Semester 2</div>
+            <button class="view-btn" onclick="showDescription(2)">View Description</button>
+        </div>
+    </div>
+
+    <!-- Full page description for Project 1 -->
+    <div class="project-page" id="project1Page">
+        <button class="close-btn" onclick="closeDescription()">Close</button>
+        <h2>Semester 1 Project: C++ Library Management System</h2>
+
+        <div class="project-description">
+            <div class="project-text">
+                <h3>Project Name</h3>
+                <p>Library Management System in C++</p>
+
+                <h3>Summary</h3>
+                <p>This project is a console-based library management system developed using C++ programming language. It allows the user to manage the library's inventory, issue and return books, and maintain a database of issued books.</p>
+
+                <h3>Description</h3>
+                <p>The system features include adding new books, deleting existing books, updating the book inventory, issuing books to library members, and generating reports. The interface is entirely console-based, allowing interaction through terminal inputs.</p>
+            </div>
+            <div class="project-image">
+                <img src="lms.webp" alt="Project Screenshot">
+                <img src="lms1.png" alt="Project Screenshot">
+            </div>
+        </div>
+    </div>
+
+    <!-- Full page description for Project 2 -->
+    <div class="project-page" id="project2Page">
+        <button  class="close-btn" onclick="closeDescription()">Close</button>
+        <h2>Semester 2 Project: Online Shopping Website</h2>
+
+        <div class="project-description">
+            <div class="project-text">
+                <h3>Project Name</h3>
+                <p>Online Shopping Website using Java OOP</p>
+
+                <h3>Summary</h3>
+                <p>This project is a fully functional e-commerce website developed using Java and Object-Oriented Programming principles. It includes product browsing, shopping cart management, and order processing features.</p>
+
+                <h3>Description</h3>
+                <p>The website allows users to browse through different product categories, add items to their cart, and proceed to checkout. It uses Java OOP concepts like inheritance, polymorphism, and encapsulation for a modular and scalable design.</p>
+            </div>
+            <div class="project-image">
+                <img src="onlineshopping.webp" alt="Project Screenshot">
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="midterm.js"></script>
+</body>
+</html>
