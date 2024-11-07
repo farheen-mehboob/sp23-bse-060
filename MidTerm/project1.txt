@@ -1,0 +1,15 @@
+Project Name
+Library Management System in C++
+
+This project is a console-based library management system developed using C++ programming language. 
+It allows the user to manage the library's inventory, issue and return books, and maintain a database of issued books.
+
+Description
+The system features include:
+                             adding new books
+                             deleting existing books
+                             updating the book inventory
+                             issuing books to library members
+                             generating reports.
+                             
+The interface is entirely console-based, allowing interaction through terminal inputs.

@@ -1,0 +1,11 @@
+Project Name
+Online Shopping Website using Java OOP
+
+Summary
+This project is a fully functional e-commerce website developed using Java and Object-Oriented Programming principles.
+ It includes product browsing, shopping cart management, and order processing features.
+
+Description
+The website allows users to browse through different product categories, add items to their cart
+ and proceed to checkout.
+ It uses Java OOP concepts like inheritance, polymorphism, and encapsulation for a modular and scalable design.
