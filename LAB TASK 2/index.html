@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Management Application</title>
+    
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #e0f7fa;
+        }
+        .container {
+            margin-top: 40px;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: #000000; /* Black color for placeholders */
+            opacity: 1; /* Ensures the placeholder is fully opaque */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="center-align teal-text">Story Management App</h1>
+        
+        <!-- Form for Adding or Editing a Story -->
+        <div class="card">
+            <div class="card-content beige lighten-1 white-text">
+                <span class="card-title">Add / Edit Story</span>
+                <div class="input-field">
+                    <input type="text" id="title"  placeholder="Story Title">
+                </div>
+                <div class="input-field">
+                    <textarea id="content" class="materialize-textarea" placeholder="Story Content"></textarea>
+                </div>
+                <button class="btn waves-effect waves-light" onclick="createStory()">Add Story</button>
+                <button class="btn orange waves-effect waves-light" onclick="updateStory()">Update Story</button>
+            </div>
+        </div>
+
+        <!-- Input to Delete a Story by ID -->
+        <div class="card">
+            <div class="card-content beige lighten-1 white-text">
+                <span class="card-title">Delete Story</span>
+                <div class="input-field">
+                    <input type="text" id="storyId" placeholder="Story ID to Delete">
+                </div>
+                <button class="btn red waves-effect waves-light" onclick="deleteStory()">Delete Story</button>
+            </div>
+        </div>
+
+        <!-- Section to Display Stories -->
+        <h2 class="center-align blue-text">STORIES</h2>
+        <div id="storyList" class="row"></div>
+    </div>
+
+    <!-- Materialize JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Linking the JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
